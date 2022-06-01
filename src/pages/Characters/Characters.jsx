@@ -1,15 +1,13 @@
 import React from 'react';
-import Spinner from '../../components/Spinner';
+import Spinner from '../../components/Spinner/Spinner';
 import styles from './Characters.module.css';
 
-import { useNavigate, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // Custom GraphQL Hook
 import { useCharacters } from '../../hooks/useCharacters';
 
 export const Characters = () => {
-  const navigate = useNavigate();
-
   const { error, loading, data } = useCharacters();
 
   if (loading) {

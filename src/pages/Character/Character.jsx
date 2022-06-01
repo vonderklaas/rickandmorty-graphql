@@ -1,5 +1,5 @@
 import React from 'react';
-import Spinner from '../../components/Spinner';
+import Spinner from '../../components/Spinner/Spinner';
 import styles from './Character.module.css';
 
 import { useParams } from 'react-router-dom';
@@ -29,8 +29,6 @@ export const Character = () => {
     );
   }
 
-  console.log(data);
-
   return (
     <div>
       <p>Character</p>
@@ -40,9 +38,9 @@ export const Character = () => {
           <h1>{data.character.name}</h1>
           <p>{data.character.gender}</p>
           <h2>Episodes:</h2>
-          {data.character.episode.map((episode) => {
+          {data.character.episode.map((episode, idx) => {
             return (
-              <div>
+              <div key={idx}>
                 {episode.name} - <b>{episode.episode}</b>
               </div>
             );

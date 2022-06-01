@@ -2,15 +2,19 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Characters } from './pages/Characters/Characters';
 import { Character } from './pages/Character/Character';
+import { Search } from './components/Search/Search';
+import { Navbar } from './components/Navbar/Navbar';
 import './App.css';
 
 const App = () => {
   return (
     <div className='App'>
-      <h2>https://rickandmortyapi.com/graphql</h2>
+      <Navbar />
+      <h3>https://rickandmortyapi.com/graphql</h3>
       <br />
       <Routes>
         <Route path='/' element={<Characters />}></Route>
+        <Route path='/search' element={<Search />}></Route>
         <Route path='/:id' element={<Character />}></Route>
       </Routes>
     </div>
