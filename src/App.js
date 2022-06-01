@@ -10,7 +10,6 @@ const App = () => {
   return (
     <div className='App'>
       <Navbar />
-      <h3>https://rickandmortyapi.com/graphql</h3>
       <br />
       <Routes>
         <Route path='/' element={<Characters />}></Route>

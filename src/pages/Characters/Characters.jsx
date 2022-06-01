@@ -5,7 +5,7 @@ import styles from './Characters.module.css';
 import { Link } from 'react-router-dom';
 
 // Custom GraphQL Hook
-import { useCharacters } from '../../hooks/useCharacters';
+import { useCharacters } from '../hooks/useCharacters';
 
 export const Characters = () => {
   const { error, loading, data } = useCharacters();
