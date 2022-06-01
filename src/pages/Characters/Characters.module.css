@@ -1,0 +1,23 @@
+.CharacterList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.CharacterListElement {
+  margin: 10px 0;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.CharacterListElement img {
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 15px;
+}
+
+.CharacterListElement:hover {
+  transform: translateY(-15px);
+}
