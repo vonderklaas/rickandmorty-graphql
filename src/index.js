@@ -12,7 +12,7 @@ const URI = 'https://rickandmortyapi.com/graphql';
 
 const client = new ApolloClient({
   uri: URI,
-  cache: InMemoryCache(),
+  cache: new InMemoryCache(),
 });
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
