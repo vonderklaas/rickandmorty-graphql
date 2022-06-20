@@ -1,3 +1,7 @@
+# rickandmorty-graphql
+
+Client-side application made with React, GraphQL and Apollo. This is an example of fetching data from GraphQL Server, where I've experimented and tested GraphQL queries, mutations and other
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
